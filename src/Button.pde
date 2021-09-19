@@ -63,7 +63,7 @@ class Button {
     fill(0);
     textAlign(CENTER,CENTER);
     textFont(font,textSize*scale);
-    text(text,posX, posY);
+    text(text, posX, posY);
   }
   
   boolean isMouseOver(){

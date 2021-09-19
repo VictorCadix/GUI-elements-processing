@@ -2,11 +2,14 @@ class StateButton extends Button{
   
   boolean on_state;
   color colorON, colorOFF;
+  String on_text, off_text;
   
   StateButton(float posx, float posy, float sizex, float sizey){
     super(posx, posy, sizex, sizey);
     
     on_state = false;
+    on_text = "";
+    off_text = "";
   }
   
   void setColorON(color c){
@@ -31,9 +34,11 @@ class StateButton extends Button{
     
     if (on_state == true){
       setColor(colorON);
+      text = on_text;
     }
     else {
       setColor(colorOFF);
+      text = off_text;
     }
   }
   
